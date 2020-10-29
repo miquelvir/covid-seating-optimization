@@ -15,6 +15,24 @@ Given a set of already sold tickets to an event, we need
 to seat as many of them as possible, while respecting
 COVID guidelines.
 
+
+**Simple example - hello world**
+
+Applying the approach explained below, with the sample
+constraints explained in the introduction, to a standium of 1000 people, we can improve,
+the number of people which we can fit by about a +15%
+of the initial random guess.
+
+In the plot below, it can be seen how the SA algorithm
+is much more conservative towards the end of the schedule
+budget, due to the exponential decay of the acceptance probability
+function.
+ 
+![Simple example - hello world - SA evolution through iterations](examples/hello_world/sa_iterations.png)
+![Simple example - hello world - SA proposed distribution](examples/hello_world/sa_solution.png)
+
+
+
 **How do we approach it?**
 
 We don't have a mathematical expression of some analytic
@@ -78,15 +96,3 @@ We don't have a mathematical expression of some analytic
  [More about simulated annealing.](https://en.wikipedia.org/wiki/Simulated_annealing)
  
  
-**Simple example - hello world**
-
-Applying this approach to a standium of 1000 people, we can improve,
-the number of people which we can fit by about a +15%.
-
-In the plot below, it can be seen how the SA algorithm
-is much more conservative towards the end of the schedule
-budget, due to the exponential decay of the acceptance probability
-function.
- 
-![Simple example - hello world - SA evolution through iterations](examples/hello_world/sa_iterations.png)
-![Simple example - hello world - SA proposed distribution](examples/hello_world/sa_solution.png)
